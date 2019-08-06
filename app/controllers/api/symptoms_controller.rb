@@ -1,6 +1,6 @@
 class Api::SymptomsController < ApplicationController
    def index
-      @symptoms = Symptoms.all
+      @symptoms = Symptom.all
       render json: @symptoms
    end
 end
