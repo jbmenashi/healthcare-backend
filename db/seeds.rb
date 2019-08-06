@@ -1,7 +1,37 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rails db:seed command (or created alongside the database with db:setup).
-#
-# Examples:
-#
-#   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
-#   Character.create(name: 'Luke', movie: movies.first)
+s1 = Symptom.create(title: 'sore throat')
+Result.create(title: 'common cold', frequency: 9, symptom_id: s1.id)
+Result.create(title: 'viral throat infection', frequency: 8, symptom_id: s1.id)
+Result.create(title: 'middle ear infection', frequency: 7, symptom_id: s1.id)
+Result.create(title: 'seasonal allergies', frequency: 6, symptom_id: s1.id)
+Result.create(title: 'strep throat', frequency: 5, symptom_id: s1.id)
+Result.create(title: 'mononucleosis infection', frequency: 4, symptom_id: s1.id)
+Result.create(title: 'bronchitis', frequency: 3, symptom_id: s1.id)
+Result.create(title: 'acid reflux disease', frequency: 2, symptom_id: s1.id)
+Result.create(title: 'acute bacterial sinusitis', frequency: 1, symptom_id: s1.id)
+
+s2 = Symptom.create(title: 'itchy rash')
+
+Result.create(title: 'sunburn', frequency: 10, symptom_id: s2.id)
+Result.create(title: 'irritant contact dermatitis', frequency: 9, symptom_id: s2.id)
+Result.create(title: 'non-specific dermatitis (skin inflammation)', frequency: 8, symptom_id: s2.id)
+Result.create(title: 'hives', frequency: 7, symptom_id: s2.id)
+Result.create(title: 'benign skin growth', frequency: 6, symptom_id: s2.id)
+Result.create(title: 'allergic reaction to poison ivy/oak/sumac', frequency: 5, symptom_id: s2.id)
+Result.create(title: 'chronic hepatitis c', frequency: 4, symptom_id: s2.id)
+Result.create(title: 'shingles (herpes zoster)', frequency: 3, symptom_id: s2.id)
+Result.create(title: 'perianal skin infection', frequency: 2, symptom_id: s2.id)
+Result.create(title: 'seborrheic dermatitis', frequency: 1, symptom_id: s2.id)
+
+
+s3 = Symptom.create(title: 'runny nose')
+
+Result.create(title: 'common cold', frequency: 10, symptom_id: s3.id)
+Result.create(title: 'chronic sinusitis', frequency: 9, symptom_id: s3.id)
+Result.create(title: 'non-allergic rhinitis', frequency: 8, symptom_id: s3.id)
+Result.create(title: 'chronic allergies', frequency: 7, symptom_id: s3.id)
+Result.create(title: 'normal congestion and runny nose', frequency: 6, symptom_id: s3.id)
+Result.create(title: 'mononucleosis infection', frequency: 5, symptom_id: s3.id)
+Result.create(title: 'viral infection of the larynx (voice box)', frequency: 4, symptom_id: s3.id)
+Result.create(title: 'chronic bronchitis', frequency: 3, symptom_id: s3.id)
+Result.create(title: 'hand-foot-and-mouth disease', frequency: 2, symptom_id: s3.id)
+Result.create(title: 'bronchiectasis', frequency: 1, symptom_id: s3.id)
